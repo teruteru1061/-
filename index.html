@@ -1,0 +1,35 @@
+# -<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Delete Confirmation PWA</title>
+</head>
+<body>
+  <div id="home-screen" class="screen">
+    <button id="delete-button" class="delete-button">Delete</button>
+  </div>
+
+  <div id="confirmation-screen" class="screen hidden">
+    <div class="confirmation-box">
+      <div class="user-info">
+        <img src="your-image-url" alt="User Icon" class="user-icon">
+        <span class="user-name">Brown</span>
+      </div>
+      <p>Do you want to delete?</p>
+      <div class="buttons">
+        <button id="confirm-delete" class="confirm-button">Delete</button>
+        <button id="cancel-delete" class="cancel-button">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="deleted-screen" class="screen hidden">
+    <p class="message">Everything has been deleted!</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
